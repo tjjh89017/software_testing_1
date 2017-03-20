@@ -14,7 +14,7 @@
 
 # Points to the root of Google Test, relative to where this file is.
 # Remember to tweak this if you move this file.
-GTEST_DIR = googletest/googltest
+GTEST_DIR = googletest/googletest
 
 # Where to find user code.
 USER_DIR = .
@@ -29,7 +29,7 @@ CXXFLAGS += -g -Wall -Wextra -pthread
 
 # All tests produced by this Makefile.  Remember to add new tests you
 # created to the list.
-TESTS = hw1_unitest
+TESTS = hw1_unittest
 
 # All Google Test headers.  Usually you shouldn't change this
 # definition.
