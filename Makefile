@@ -80,3 +80,6 @@ main_unittest.o : $(USER_DIR)/main_unittest.cpp \
 
 hw1_unittest : main.o main_unittest.o gtest_main.a
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -lpthread $^ -o $@
+
+test : $(TESTS)
+	./$(TESTS)
