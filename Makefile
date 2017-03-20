@@ -75,7 +75,7 @@ main.o : $(USER_DIR)/main.cpp $(USER_DIR)/main.hpp $(GTEST_HEADERS)
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -c $(USER_DIR)/main.cpp
 
 main_unittest.o : $(USER_DIR)/main_unittest.cpp \
-                     $(USER_DIR)/main.h $(GTEST_HEADERS)
+                     $(USER_DIR)/main.hpp $(GTEST_HEADERS)
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -c $(USER_DIR)/main_unittest.cpp
 
 hw1_unittest : main.o main_unittest.o gtest_main.a
